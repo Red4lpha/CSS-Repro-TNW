@@ -1,0 +1,41 @@
+:root {
+    --nav: #202020;
+    --bg: #181818;
+    --font-primary: white;
+    --font-secondary: #909090;
+    --border: #2b2b2b;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Global styles */
+
+ul {
+    list-style:none
+}
+.color-bg-text {
+    text-transform: uppercase;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+.container {
+    width: 1521px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+/* header {
+
+} */
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
