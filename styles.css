@@ -27,19 +27,16 @@ ul {
 .container {
     width: 1273px;
     margin: 50px auto;
-    display: flex;
-    flex-direction: column;
+  /*   display: flex;
+    flex-direction: column; */
 }
 
-.blue {
-    color: var(--blue-emp);
-
-}
+.blue { color: var(--blue-emp);}
 /* Header */
 
-/* header {
-
-} */
+header {
+    border-bottom: 1px solid #bfbfbf;
+}
 
 .header-top {
     display: flex;
@@ -60,11 +57,13 @@ ul {
    text-align: center;
 }
 
-/* ------------------------ */
+/* -----------Header Nav------------- */
 
 header nav {
-    border: 5px solid red;
-    width: 100%;
+/*     border: 5px solid red;
+ */    
+    position: sticky;
+    top: 0;
 }
 .header-nav{
     display: flex;
@@ -78,3 +77,45 @@ header nav {
     font-weight: bolder;
     text-transform: capitalize;
 }
+
+/* -----------Main Container ------------ */
+
+.main-container {
+    padding-top: 20px;
+}
+
+/* -----------Main - content ------------ */
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+.content article {
+    border: 5px dashed blue;
+    flex-basis: 75%;
+    padding-right: 20px;
+}
+.content aside {
+    /* border: 1px dashed blue; */
+    flex-basis: 25%;
+}
+
+/*  --------Main Content Article---------*/
+
+.content article > * {
+    padding-top: 10px;
+    border: 2px solid red;
+}
+.content h1 {
+    font-size: 42px;
+    padding-top: 0px;
+}
+.content-image img{
+    width: 100%;
+}
+div.content-img-cap {
+    font-size: smaller;
+    padding-top: 1px;
+}
+
+
