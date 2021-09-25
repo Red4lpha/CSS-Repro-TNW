@@ -129,7 +129,10 @@ a, a:hover, a:visited, a:active {
 
 .content article > * {
     padding-top: 10px;
-    border: 2px solid red;
+}
+div.social-icons-big svg {
+    width: 32px;
+    height: 32px;
 }
 .content h1 {
     font-size: 42px;
@@ -311,7 +314,7 @@ nav.footer-item ul {
 
 /*  --------Footer - social--------*/
 .footer-item.social {
-    border: 2px solid red;
+    border: 2px solid blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -320,12 +323,67 @@ nav.footer-item ul {
 .footer-social-sub-container{
     display: flex;
 }
+.footer-social-sub-container > * {
+    
+}
+.footer-social-item {
+    padding: 20px;
+}
 
 .cookie-settings{
     background-color: var(--purple-emp);
     border: none;
     padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+}
+.cookie-settings:hover{
+    opacity: .70;
 }
 .footer-social-item-left img{
     width: 100px;
+}
+.footer-social-item div > * {
+    padding: 10px;
+}
+.footer-social-item h5 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: small;
+}
+
+/* -----------Social Icons -----------*/
+.social-icons svg {
+    width: 26px;
+    height: 26px;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    fill: white;
+    margin-right: 10px; 
+}
+.social-icons svg:hover {
+    opacity: .80;
+}
+
+.social-facebook {
+    background-color: var(--purple-emp);
+}
+.social-twitter {
+    background-color: var(--blue-emp); 
+}
+.social-indeed {
+    background-color: #1da1f2;
+}
+.social-pintrest {
+    background-color: #cb2027;
+}
+.social-whatsapp {
+    background-color: #4dc247;
+}
+.social-reddit {
+    background-color: #ff5700;
+}
+.social-email, .social-print {
+    background-color: #999;
 }
