@@ -57,12 +57,14 @@ a, a:hover, a:visited, a:active {
 }
 
 .header-top-item-2 {
-    font-size: 60px
+    font-size: 60px;
+    font-weight: bolder;
 }
 
 .header-top-item-3 {
    flex-basis: 17em;
    text-align: center;
+   align-self: flex-start;
 }
 
 /* -----------Header Nav------------- */
@@ -109,12 +111,10 @@ a, a:hover, a:visited, a:active {
     overflow-y: auto;
 }
 .content article {
-    border: 1px solid blue;
     flex-basis: 75%;
     padding-right: 20px;
 }
 .content aside {
-    border: 2px solid red;
     flex-basis: 25%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -126,7 +126,9 @@ a, a:hover, a:visited, a:active {
 }
 
 /*  --------Main Content Article---------*/
-
+.main-item.content {
+    padding-bottom: 40px;
+}
 .content article > * {
     padding-top: 10px;
 }
@@ -188,6 +190,7 @@ div.content-img-cap {
     padding: 11px;
     font-size: large;
     font-weight: bolder;
+    color: #4d4d4d;
 }
 .aside-story:hover {
     color: var(--blue-emp);
@@ -195,10 +198,46 @@ div.content-img-cap {
 
 /*  --------Post - Main Content Article - Social Section--------*/
 .main-container .social {
-    border: 2px solid purple;
     width: 75%;
     padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
+.main-item.social > * {
+    /* border: 2px solid red; */
+}
+.main-item.social img {
+    margin-left: auto;
+    margin-right: 8px;
+}
+.main-item.social nav {
+    width: 180px
+}
+.issue-link li{
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+}
+.issue-link li:nth-child(2){
+    background-color: #20b2aa;
+}
+.issue-link li:nth-child(3){
+    background-color: red;
+}
+.issue-link li:nth-child(1):hover{
+    background-color: #288eb7;
+}
+.issue-link li:nth-child(2):hover{
+    background-color: #5f9ea0;
+}
+.issue-link li:nth-child(3):hover{
+    background-color: #de1d1d;
+}
+
+
+
 /*  --------Post - Main Content Article -  More Section --------*/
 .more-heading {
     padding-bottom: 15px;
@@ -207,7 +246,6 @@ div.content-img-cap {
 }
 
 .more-articles ul{
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -314,7 +352,6 @@ nav.footer-item ul {
 
 /*  --------Footer - social--------*/
 .footer-item.social {
-    border: 2px solid blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -346,11 +383,40 @@ nav.footer-item ul {
 .footer-social-item div > * {
     padding: 10px;
 }
+div.social-app-links span {
+    padding-left: 0px;
+}
 .footer-social-item h5 {
     text-transform: uppercase;
     font-weight: lighter;
     font-size: small;
 }
+
+/*  --------Footer - copyright--------*/
+.footer-item.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    font-size: small;
+    
+}
+.copyright-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.copyright-top{
+    font-weight: bold;
+    padding-right: 15px;
+}
+.copyright-right svg {
+    width: 40px;
+    height: 40px
+}
+
+
 
 /* -----------Social Icons -----------*/
 .social-icons svg {
@@ -363,7 +429,7 @@ nav.footer-item ul {
     margin-right: 10px; 
 }
 .social-icons svg:hover {
-    opacity: .80;
+    opacity: .70;
 }
 
 .social-facebook {
