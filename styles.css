@@ -91,6 +91,7 @@ a, a:hover, a:visited, a:active {
     margin: 0;
     border-bottom: 1px solid #bfbfbf;
     z-index: 10;
+    padding: 5px 0
 }
 .header-nav nav {
     width: 1273px;
@@ -101,6 +102,7 @@ a, a:hover, a:visited, a:active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-item {
@@ -108,6 +110,18 @@ a, a:hover, a:visited, a:active {
     padding-bottom: 5px;
     font-weight: bolder;
     text-transform: capitalize;
+}
+
+.nav-item.more svg {
+    width: 25%;
+    height: 25%;
+    padding-left: 5px;
+}
+.nav-item.right, .nav-item.more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -----------Main Container ------------ */
@@ -202,7 +216,7 @@ div.content-img-cap p:first-child{
     flex-basis: 25%;
     align-self: flex-start;
     position: sticky;
-    top: 45px;
+    top: 55px;
 }
 .aside-grid-container {
     display: grid;
