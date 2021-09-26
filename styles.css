@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Roboto:wght@500&display=swap');
 :root {
     --nav: #202020;
     --bg: #181818;
@@ -15,6 +16,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 /* Global styles */
 
